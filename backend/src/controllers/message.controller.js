@@ -50,11 +50,10 @@ export const sendMessage = async (req, res) => {
       senderId,
       receiverId,
       text,
-      image,
+      image: imageUrl,
     });
 
     await newMessage.save();
-
     //todo: realtime Functionlity goes here using socket.io
 
     res.status(201).json(newMessage);
