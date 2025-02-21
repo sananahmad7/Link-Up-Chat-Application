@@ -31,7 +31,7 @@ if (process.env.NODE_ENV === "production") {
 
 //Middleware to allow to extract json data
 
-server.listen(5001, () => {
+server.listen(Port, () => {
   console.log("Server is running on port", Port);
   connectDB();
 });
